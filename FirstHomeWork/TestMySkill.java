@@ -12,9 +12,9 @@ public class TestMySkill {
     public static void main (String [] args) {
         i = 33564;
         int addInt = i + i;
-        int subInt = (int) (i - i);
-        int divInt = (int) (i / i);
-        int multInt = (int) (i * i);
+        int subInt = i - i;
+        int divInt = i / i;
+        int multInt = i * i;
 
         System.out.println("Addition " + addInt);
         System.out.println("Subtraction " + subInt);
@@ -23,10 +23,10 @@ public class TestMySkill {
         System.out.println(" ");
 
         b = 9;
-        byte addByte = (byte) (b + b);
-        byte subByte = (byte) (b - b);
-        byte divByte = (byte) (b / b);
-        byte multByte = (byte) (b * b);
+        int addByte = b + b;
+        int subByte = b - b;
+        int divByte = b / b;
+        int multByte = b * b;
 
         System.out.println("Addition " + addByte);
         System.out.println("Subtraction " + subByte);
@@ -35,10 +35,10 @@ public class TestMySkill {
         System.out.println(" ");
 
         s = 526;
-        short addShort = (short) (s + s);
-        short subShort = (short) (s - s);
-        short divShort = (short) (s / s);
-        short multShort = (short) (s * s);
+        int addShort = s + s;
+        int subShort = s - s;
+        int divShort = s / s;
+        int multShort = s * s;
 
         System.out.println("Addition " + addShort);
         System.out.println("Subtraction " + subShort);
@@ -47,10 +47,10 @@ public class TestMySkill {
         System.out.println(" ");
 
         l = 854775807L;
-        long addLong = (long) (l + l);
-        long subLong = (long) (l - l);
-        long divLong = (long) (l / l);
-        long multLong = (long) (l * l);
+        long addLong = l + l;
+        long subLong = l - l;
+        long divLong = l / l;
+        long multLong = l * l;
 
         System.out.println("Addition " + addLong);
         System.out.println("Subtraction " + subLong);
@@ -59,10 +59,10 @@ public class TestMySkill {
         System.out.println(" ");
 
         d = 4.62351653;
-        double addDouble = (double) (d + d);
-        double subDouble = (double) (d - d);
-        double divDouble = (double) (d / d);
-        double multDouble = (double) (d *d);
+        double addDouble = d + d;
+        double subDouble = d - d;
+        double divDouble = d / d;
+        double multDouble = d *d;
 
         System.out.println("Addition " + addDouble);
         System.out.println("Subtraction " + subDouble);
@@ -71,10 +71,10 @@ public class TestMySkill {
         System.out.println(" ");
 
         f = 5.656565f;
-        float addFloat = (float) (f + f);
-        float subFloat = (float) (f - f);
-        float divFloat = (float) (f / f);
-        float multFloat = (float) (f * f);
+        float addFloat = f + f;
+        float subFloat = f - f;
+        float divFloat = f / f;
+        float multFloat = f * f;
 
         System.out.println("Addition " + addFloat);
         System.out.println("Subtraction " + subFloat);
@@ -89,3 +89,4 @@ public class TestMySkill {
     }
 
 }
+
