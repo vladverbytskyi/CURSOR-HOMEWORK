@@ -7,6 +7,6 @@ public class TaskNumber5 {
         for (int i = 0; i < integers.length; i ++)  {
             sum += integers[i];
         }
-        System.out.print("Середнє арифметичне становить - " + sum / integers.length);
+        System.out.print("Average - " + sum / integers.length);
     }
 }
