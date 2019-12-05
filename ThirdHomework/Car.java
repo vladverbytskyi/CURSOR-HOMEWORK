@@ -30,12 +30,9 @@ public class Car {
 
             if (distance == 20) {
                 stop();
-
-
             }
         }
     }
-
     public void stop() {
         speed = 0;
         start_engine = false;

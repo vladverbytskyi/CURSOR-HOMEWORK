@@ -5,7 +5,5 @@ public class Run {
         new CountObject().countObject();
         new Circle(1).circleArea();
         new Car().startEngine(true);
-
-
     }
 }
