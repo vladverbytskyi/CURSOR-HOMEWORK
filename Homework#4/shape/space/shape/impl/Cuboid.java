@@ -1,15 +1,15 @@
-package shape.spaceShape.impl;
+package shape.space.shape.impl;
 
-import shape.spaceShape.SpaceShape;
+import shape.space.shape.SpaceShape;
 import vertex.Vertex3D;
 
 public class Cuboid extends SpaceShape {
-    private final Vertex3D coordinate;
-    private final double width;
-    private final double height;
-    private final double depth;
+    private Vertex3D coordinate;
+    private double width;
+    private double height;
+    private double depth;
 
-    public Cuboid (final Vertex3D coordinate, final double width, final double height, final double depth) {
+    public Cuboid (Vertex3D coordinate, double width, double height, double depth) {
         this.coordinate = coordinate;
         this.width = width;
         this.height = height;
@@ -33,18 +33,18 @@ public class Cuboid extends SpaceShape {
     }
 
     @Override
-    public double area() {
+    public double calculateArea() {
         return 2 * (getWidth() * getHeight() + getHeight() * getDepth() + getWidth() * getDepth());
     }
 
     @Override
-    public double volume() {
+    public double calculateVolume() {
         return getWidth() * getHeight() * getHeight();
     }
 
     @Override
     public String toString() {
-        return "Cuboid: area - " + area() + " cm2; " + "volume - " + volume() + " cm3; " + "coordinates - " +
+        return "Cuboid: area - " + calculateArea() + " cm2; " + "volume - " + calculateVolume() + " cm3; " + "coordinates - " +
                 getCoordinate().toString() + "; " + "width - " + width + " cm; " + "height - " + height + " cm; " + "depth - " + depth +
                 " cm;";
     }

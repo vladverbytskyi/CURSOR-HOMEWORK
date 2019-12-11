@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface PerimeterMeasurable {
-    double perimeter();
+    double calculatePerimeter();
 }

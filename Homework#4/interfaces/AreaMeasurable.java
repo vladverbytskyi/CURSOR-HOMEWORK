@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface AreaMeasurable {
-    double area();
+    double calculateArea();
 }
