@@ -15,17 +15,17 @@ public class MyList<T extends Number> {
         return list;
     }
 
-    public Integer getMax(@NotNull List<T> list) {
+    public long getMax(@NotNull List<T> list) {
         return list
                 .stream()
-                .mapToInt(Number::intValue)
+                .mapToLong(Number::longValue)
                 .max().orElseThrow(NoSuchElementException::new);
     }
 
-    public Integer getMin(@NotNull List<T> list) {
+    public long getMin(@NotNull List<T> list) {
         return list
                 .stream()
-                .mapToInt(Number::intValue)
+                .mapToLong(Number::longValue)
                 .min().orElseThrow(NoSuchElementException::new);
     }
 }
