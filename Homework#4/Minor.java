@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Minor {
-    public void minor() {
+    public void RunApp() {
         final Triangle triangle = new Triangle(new Vertex2D(1, 2), new Vertex2D(2,3), new Vertex2D(3, 4));
         final Circle circle = new Circle(new Vertex2D(1, 2), 4);
         final Rectangle rectangle = new Rectangle(new Vertex2D(1, 2), 4 , 5);
