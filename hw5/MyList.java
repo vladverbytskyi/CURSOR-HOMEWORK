@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-public class MyList<T extends Number> {
+public class MyList<T extends Number & Comparable <? super T>> {
     private List<T> list = new ArrayList<>();
     public void addArgument(T argument) {
         this.list.add(argument);
