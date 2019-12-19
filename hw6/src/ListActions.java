@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class DivisibleBy3 {
-    void divisibleBy3() {
+public class ListActions {
+    void addNumbers() {
         List<Integer> list = new ArrayList<>();
         list.add(3);
         list.add(9);

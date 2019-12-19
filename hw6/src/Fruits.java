@@ -11,6 +11,7 @@ public class Fruits {
         list.add("Avocado");
 
         System.out.println("List before replace: " + list);
+
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).equals("Orange")) {
                 list.set(i, "Grapefruit");
