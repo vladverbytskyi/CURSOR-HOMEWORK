@@ -10,11 +10,7 @@ public class NewLibrary {
 
     private void putBook(LocalDate date, String name) {
         if (listOfBook.get(date) == null) {
-            listOfBook.put(date, new ArrayList<>() {
-                {
-                    add(name);
-                }
-            });
+            listOfBook.put(date, new ArrayList<>() {{add(name);}});
         } else {
             listOfBook.get(date).add(name);
         }
@@ -32,7 +28,8 @@ public class NewLibrary {
         putBook(LocalDate.of(2019, 10, 21), "The Golden Compass");
 
         for (LocalDate date = firstDay; date.isBefore(lastDay); date = date.plusDays(1)) {
-            System.out.println(date + " - " + listOfBook.getOrDefault(date, new ArrayList<>()).size());
+            System.out.println(date + " - " + listOfBook.getOrDefault(date, new ArrayList<>())
+                    .size());
         }
     }
 }
