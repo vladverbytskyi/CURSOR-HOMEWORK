@@ -10,9 +10,12 @@ public class NewLibrary {
 
     private void putBook(LocalDate date, String name) {
         if (listOfBook.get(date) == null) {
-            listOfBook.put(date, new ArrayList<>() {{add(name);}});
+            listOfBook.put(date, new ArrayList<>() {{
+                add(name);
+            }});
         } else {
-            listOfBook.get(date).add(name);
+            listOfBook.get(date)
+                    .add(name);
         }
     }
 
