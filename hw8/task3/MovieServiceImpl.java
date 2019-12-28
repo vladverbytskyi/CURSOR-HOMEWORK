@@ -8,7 +8,8 @@ public class MovieServiceImpl implements MovieService {
 
     @Override
     public Map<String, Double> getAvgPricePerGenre(List<Movie> movies) {
-        return movies.stream().collect(Collectors.groupingBy(Movie::getGenre, Collectors.averagingDouble(Movie::getTicketsPrice)));
+        return movies.stream().collect(
+                Collectors.groupingBy(Movie::getGenre, Collectors.averagingDouble(Movie::getTicketsPrice)));
     }
 
     @Override

@@ -9,10 +9,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Map<String, List<String>> getLoggedUsers(List<User> users) {
-        return users.stream()
-                .filter(user -> user.getLoginDate()
-                        .isBefore(LocalDate.now()
-                                .minusWeeks(1)))
-                .collect(Collectors.groupingBy(User::getTeam, Collectors.mapping(User::getEmail, Collectors.toList())));
+        return users.stream().filter(user -> user.getLoginDate().isBefore(LocalDate.now().minusWeeks(1))).collect(
+                Collectors.groupingBy(User::getTeam, Collectors.mapping(User::getEmail, Collectors.toList())));
     }
 }

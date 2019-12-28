@@ -19,8 +19,6 @@ public class Thing {
 
     @Override
     public String toString() {
-        return "Thing{" +
-                "name='" + name + '\'' +
-                '}';
+        return "Thing{" + "name='" + name + '\'' + '}';
     }
 }
